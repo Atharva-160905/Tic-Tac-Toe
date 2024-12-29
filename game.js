@@ -68,6 +68,7 @@ const enableBoxes=()=>{
     for(let box of boxes){
         box.disabled=false;
         box.innerText="";
+        box.classList.remove("x-mark", "o-mark"); // Remove the classes
     }
 
 }
