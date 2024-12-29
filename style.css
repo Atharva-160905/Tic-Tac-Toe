@@ -77,3 +77,35 @@ body{
     color:rgb(169, 21, 169);
 
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    /* Adjust game size for smaller screens */
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+    }
+
+    /* Adjust box size and font size for smaller screens */
+    .box {
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 12vmin;
+    }
+
+    /* Adjust button size and padding for smaller screens */
+    #reset-btn, #new-btn {
+        font-size: 3vmin;
+        padding: 2vmin 4vmin;
+    }
+
+    #new-btn {
+        font-size: 4vmin;
+        padding: 2.5vmin 5vmin;
+    }
+
+    /* Adjust message font size for smaller screens */
+    #msg {
+        font-size: 7vmin;
+    }
+}
