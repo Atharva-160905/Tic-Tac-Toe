@@ -79,6 +79,31 @@ body{
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+    /* Adjust game size for medium screens */
+    .game {
+        height: 70vmin;
+        width: 70vmin;
+    }
+
+    /* Adjust box size and font size for medium screens */
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    /* Adjust button size and padding for medium screens */
+    #reset-btn, #new-btn {
+        font-size: 2.5vmin;
+        padding: 1.5vmin 3vmin;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+}
+
 @media (max-width: 600px) {
     /* Adjust game size for smaller screens */
     .game {
@@ -107,5 +132,31 @@ body{
     /* Adjust message font size for smaller screens */
     #msg {
         font-size: 7vmin;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Adjust game size for very small screens */
+    .game {
+        height: 90vmin;
+        width: 90vmin;
+    }
+
+    /* Adjust box size and font size for very small screens */
+    .box {
+        height: 28vmin;
+        width: 28vmin;
+        font-size: 14vmin;
+    }
+
+    /* Adjust button size and padding for very small screens */
+    #reset-btn, #new-btn {
+        font-size: 4vmin;
+        padding: 3vmin 6vmin;
+    }
+
+    /* Adjust message font size for very small screens */
+    #msg {
+        font-size: 8vmin;
     }
 }
