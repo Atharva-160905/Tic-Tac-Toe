@@ -1,102 +1,101 @@
-
-body{
-    background-color:gray;
+body {
+    background-color: gray;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-.container{
-    height:70vh;
-    display:flex;
+
+.container {
+    height: 100vh; /* Adjusted for better responsiveness */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    padding: 1rem;
 }
-.game{
-    height:60vmin;
-    width:60vmin;
-    display:flex;
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:2vmin ;
+    gap: 2vmin;
+    margin: 0 auto; /* Center the game grid */
 }
-.box{
-    height:18vmin;
-    width:18vmin;
-    border-radius:2rem;
-    border:none ;
-    box-shadow:1cap;
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Improved shadow */
     font-size: 8.5vmin;
-    color:rgb(156, 46, 64);
-    background-color:rgb(255, 233, 236) ;
-    
+    color: rgb(156, 46, 64);
+    background-color: rgb(255, 233, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Indicate interactivity */
 }
-#reset-btn{
-    height: 4vmin;
-    font-size: 2vmin;
-    border-radius: 1rex;
+
+#reset-btn, #new-btn {
+    height: 5vmin;
+    font-size: 2.5vmin;
+    border-radius: 1rem; /* Fixed typo */
     border: none;
     color: black;
     font-weight: 600;
     background-color: palegoldenrod;
-
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 1rem auto; /* Center button */
 }
-#new-btn{
-    height: 6vmin;
-    width:20vmin ;
-    font-size: 3vmin;
-    border-radius: 1rex;
-    border: none;
-    color: black;
-    font-weight: 600;
-    background-color: palegoldenrod;
-    
 
-}
-#msg{
+#msg {
     font-size: 5vmin;
-    color:rgb(133, 20, 39);
+    color: rgb(133, 20, 39);
+    margin: 1rem 0; /* Add spacing */
 }
-.msg-container{
-    height:100vmin;
-    display:flex;
+
+.msg-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:4rem;
-    
-
+    gap: 2rem;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.x-mark{
-    color:rgb(133, 20, 39); ;
-}
-.o-mark{
-    color:rgb(169, 21, 169);
 
+.x-mark {
+    color: rgb(133, 20, 39);
+}
+
+.o-mark {
+    color: rgb(169, 21, 169);
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 800px) {
-    /* Adjust game size for medium screens */
     .game {
         height: 70vmin;
         width: 70vmin;
     }
 
-    /* Adjust box size and font size for medium screens */
     .box {
         height: 22vmin;
         width: 22vmin;
         font-size: 10vmin;
     }
 
-    /* Adjust button size and padding for medium screens */
     #reset-btn, #new-btn {
         font-size: 2.5vmin;
-        padding: 1.5vmin 3vmin;
+        padding: 1rem 2rem;
     }
 
     #msg {
@@ -105,57 +104,44 @@ body{
 }
 
 @media (max-width: 600px) {
-    /* Adjust game size for smaller screens */
     .game {
         height: 80vmin;
         width: 80vmin;
     }
 
-    /* Adjust box size and font size for smaller screens */
     .box {
         height: 24vmin;
         width: 24vmin;
         font-size: 12vmin;
     }
 
-    /* Adjust button size and padding for smaller screens */
     #reset-btn, #new-btn {
         font-size: 3vmin;
-        padding: 2vmin 4vmin;
+        padding: 1.5rem 2.5rem;
     }
 
-    #new-btn {
-        font-size: 4vmin;
-        padding: 2.5vmin 5vmin;
-    }
-
-    /* Adjust message font size for smaller screens */
     #msg {
         font-size: 7vmin;
     }
 }
 
 @media (max-width: 400px) {
-    /* Adjust game size for very small screens */
     .game {
         height: 90vmin;
         width: 90vmin;
     }
 
-    /* Adjust box size and font size for very small screens */
     .box {
         height: 28vmin;
         width: 28vmin;
         font-size: 14vmin;
     }
 
-    /* Adjust button size and padding for very small screens */
     #reset-btn, #new-btn {
         font-size: 4vmin;
-        padding: 3vmin 6vmin;
+        padding: 2rem 3rem;
     }
 
-    /* Adjust message font size for very small screens */
     #msg {
         font-size: 8vmin;
     }
